@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/bege">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Escolha o seu produto: "
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:id="@+id/arroz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo"
+        android:text="Arroz (R$ 9,99)"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        />
+
+    <CheckBox
+        android:id="@+id/leite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arroz"
+        android:text="Leite (R$ 7,00)"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        />
+    <CheckBox
+        android:id="@+id/carne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/leite"
+        android:text="Carne (R$ 9,70)"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        />
+    <CheckBox
+        android:id="@+id/feijão"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carne"
+        android:text="Feijão (R$ 9,70)"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btnTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feijão"
+        android:layout_marginLeft="80dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="80dp"
+    android:gravity="center"
+    android:backgroundTint="@color/marrom"
+    android:text="Verificar total das compras"
+    />
+</RelativeLayout>
